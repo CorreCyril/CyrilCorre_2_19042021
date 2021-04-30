@@ -14,7 +14,7 @@
 <body>
     <header>
         <div id="header">
-            <div class="reservia">
+            <div>
                 <img src="Icons\Reservia@3x.png" height="40">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
@@ -86,11 +86,11 @@
     
     <div class="haut">
         <div class="container">
-            <h1>Hébergements à Marseille</h1>
+            <h1 class="h1">Hébergements à Marseille</h1>
             <div class="hebergement"> 
             <img src="Images\Hébergements\Auberge_la_Cannebière.jpg" class="image">
             <h2>Auberge La Cannebière</h2>
-            <p>Nuit à partir de 25 &euro;</p>
+            <p class="nuit">Nuit à partir de 25 &euro;</p>
             <span>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -102,7 +102,7 @@
             <div class="hebergement">
             <img src="Images\Hébergements\Hôtel_du_port.jpg" class="image">
             <h2>Hôtel du port</h2>
-            <p>Nuit à partir de 52 &euro;</p>
+            <p class="nuit">Nuit à partir de 52 &euro;</p>
             <span>
                 <i class="fas fa-star fa-xs " style="color: #0065FC"></i>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -114,7 +114,7 @@
             <div class="hebergement">
                 <img src="Images\Hébergements\Hôtel_Les_mouettes.jpg" class="image">
                 <h2>Hôtel Les mouettes</h2>
-                <p>Nuit à partir de 76 &euro;</p>
+                <p class="nuit">Nuit à partir de 76 &euro;</p>
                 <span>
                     <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
                     <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -126,7 +126,7 @@
             <div class="hebergement"> 
             <img src="Images\Hébergements\Hôtel_de_la_mer.jpg" class="image">
             <h2>Hôtel de la mer</h2>
-            <p>Nuit à partir de 46 &euro;</p>
+            <p class="nuit">Nuit à partir de 46 &euro;</p>
             <span>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -138,7 +138,7 @@
             <div class="hebergement">
             <img src="Images\Hébergements\Auberge_Le_panier.jpg" class="image">
             <h2>Hôtel de la mer</h2>
-            <p>Nuit à partir de 23 &euro;</p>
+            <p class="nuit">Nuit à partir de 23 &euro;</p>
             <span>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -150,7 +150,7 @@
             <div class="hebergement">     
             <img src="Images\Hébergements\Hôtel_chez_Amina.jpg" class="image">
             <h2>Hôtel chez Amina</h2>
-            <p>Nuit à partir de 96 &euro;</p>
+            <p class="nuit">Nuit à partir de 96 &euro;</p>
             <span>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -161,13 +161,20 @@
             </div>
             <a href="Afficher_plus.html" id="afficher">Afficher plus</a>
         </div>
-        <div class="droite">
-            <h1>Les plus populaires&emsp;&emsp;&emsp;<i class="fas fa-chart-line" style="color: black;"></i></h1>
+        <div id="droite">
+            <div id="TITRE">
+                <div>
+                    <h1 class="h1">Les plus populaires</h1>
+                </div>
+                <div id="chart">
+                    <i class="fas fa-chart-line fa-lg" style="color: black;"></i></h1>
+                </div>
+            </div>
             <div class="populaire">
                 <img src="Images\Hébergements\Hôtel_Le_soleil_du_matin.jpg" class="pop">
                 <div>
                 <h2>Hôtel Le soleil du matin</h2>
-                <p>Nuit à partir de 128 &euro;</p>
+                <p class="nuitpop">Nuit à partir de 128 &euro;</p>
                 <span>
                     <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
                     <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -181,7 +188,7 @@
                 <img src="Images\Hébergements\Au_coeur_de_l'eau.jpg" class="pop">
                 <div>
                 <h2>Au coeur de l'eau Chambre d'hôtes</h2> 
-                <p>Nuit à partir de 71 &euro;</p> 
+                <p class="nuitpop">Nuit à partir de 71 &euro;</p> 
                 <span>
                     <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
                     <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -195,7 +202,7 @@
                 <img src="Images\Hébergements\Hôtel_Tout_bleu_et_Blanc.jpg" class="pop">
                 <div>
                 <h2>Hôtel Tout bleu et Blanc</h2>
-                <p>Nuit à partir de 68 &euro;</p>
+                <p class="nuitpop">Nuit à partir de 68 &euro;</p>
                 <span>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
                 <i class="fas fa-star fa-xs" style="color: #0065FC"></i>
@@ -208,7 +215,7 @@
         </div>
     </div>
     <div class="Activités">
-        <h1>Activités à Marseille</h1>
+        <h1 class="h1">Activités à Marseille</h1>
         <div class="Activ1">
             <img src="Images\Activités\Vieux_Port.jpg" class="ACT1">
             <h2>Vieux Port</h2>
