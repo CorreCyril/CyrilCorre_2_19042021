@@ -105,6 +105,7 @@ button{
 .selec:hover{
     transform: scale(1.2);
     background-color: #F2F2F2;
+    cursor: pointer;
 }
 .logo{
     display: flex;
