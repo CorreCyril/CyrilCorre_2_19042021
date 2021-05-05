@@ -1,7 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
-
 #header{
     display: flex;
     width: 100%;
@@ -149,7 +148,7 @@ button{
     flex-direction: column;
     justify-content: center;
 }
-.haut{
+#haut{
     display: flex;
     padding-top: 20px;
 }
@@ -231,16 +230,16 @@ flex-wrap: wrap;
 align-items: flex-start;
 padding-top: 30px;
 padding-bottom: 60px;
-         }
+}
 .Activ1{
 width: 22%;
 height: 440px;
 background-color: white;
-border-radius: 20px;
+border-radius: 15px;
 box-shadow: 5px 5px 5px grey;
  }
 .Activ2{
-    display: flex;
+display: flex;
 width: 22%;
 height: 440px;
 background-color: white;
@@ -324,7 +323,7 @@ span{
             }
 h1{
     width: 100%;
-    font-size: 18px;
+    font-size: 1.1rem;
     margin-bottom: 5Px;
                 }
 .gros{
@@ -356,3 +355,123 @@ p{
     text-decoration: none;
     padding-top: 5px;
     }
+@media (max-width: 1000px){
+    #header{
+        flex-direction: column;
+    }
+    #trouvez{
+        order: 2;
+        width: 100%;
+    }
+    #nav-haut{
+        order: 1;
+        padding-top: 30px;
+        width: 100%;
+    }
+    .heb{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        width: 50%;
+    }
+    .act{
+        text-align: center;
+        width: 50%;
+    }
+    .insc{
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        text-align: right;
+        line-height: 30px;
+    }
+    #Reservia{
+        position: absolute;
+        top: 0px;
+        left: 20px
+    }
+    #barre{
+        flex-direction: column;
+    }
+    .selec{
+        width: 200px;
+        margin-top: 10px;
+    }
+    #info{
+        margin-top: 200px;
+    }
+    #haut{
+        flex-direction: column;
+        align-items: center;
+    }
+    #container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        border-radius: 0px;
+        height: 1400px;
+        order: 2;
+        background-color: white;
+        align-items: center;
+        margin: 0px;
+    }
+    .container1{
+        width: 300px;
+    }
+    .hebergement{
+        width: 300px;
+    }
+    .image{
+        width: 290px;
+    }
+    #droite{
+        width: 100%;
+        border-radius: 0px;
+        order: 1;
+        height: 600px;
+        margin: 0px;
+    }
+    #TITRE{
+        padding-top: 20px;
+    }
+    #Activités{
+        flex-direction: column;
+        height: 1030px;
+        background-color: white;
+        width: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+    }
+    .Activ1{
+        width: 300px;
+        height: 140px;
+    }
+    .ACT1{
+        height: 100px;
+    }
+    .Activ2{
+        width: 300px;
+        height: 300px;
+    }
+    #Activ3{
+        height: 140px;
+    }
+    #ACT2{
+        height: 100px;
+    }
+    .Activ5{
+        height: 140px;
+    }
+    .ACT4{
+        height: 100px;
+    }
+    #plan{
+        flex-direction: column;
+        height: 350px;
+    }
+    .item{
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+}
