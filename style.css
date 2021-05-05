@@ -10,7 +10,7 @@ body{
 #nav-haut{
     display: flex;
     width: 30%;
-            }
+}
 .recherche{
     width: 150px;
     height: 60px;
@@ -38,7 +38,7 @@ body{
     width: 100%;
     height: 40px;
     margin-top: 20px;
-    }
+}
 #map{
     width: 40px;
     height: 40px;
@@ -49,7 +49,7 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-                   }
+}
 #mars{
     width: 200px;
     height: 40px;
@@ -70,7 +70,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-        }
+}
 button{
     color: white;
     background-color: #0065FC;
@@ -100,9 +100,9 @@ button{
     border-radius: 17px;
     border: 2px solid #DEEBFF;
     margin-right: 30px;
-    }
+}
 .selec:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: #F2F2F2;
     cursor: pointer;
 }
@@ -114,7 +114,7 @@ button{
     height: 30px;
     background-color: #DEEBFF;
     border-radius: 15px;
-    }
+}
 .cat{
     display: flex;
     height: 26px;
@@ -124,10 +124,10 @@ button{
     font-weight: bold;
     padding-right: 20px;
     border-radius: 13px;
-    }
+}
 .cat:hover{
     background-color: #F2F2F2;
-    }
+}
 #info{
     display: flex;
     width: 100%;
@@ -168,14 +168,19 @@ button{
     margin: auto;
 }
 .hebergement{
-width: 210px;
-height: 180px;
-background-color: white;
-border-radius: 15px;
-box-shadow: 5px 5px 5px grey;
-display: flex;
-flex-direction: column;
-margin: auto
+    width: 210px;
+    height: 180px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    margin: auto
+}
+.hebergement:hover{
+    transform: scale(1.1);
+    background-color: #F2F2F2;
+    cursor: pointer;
 }
 .image{
     width: 200px;
@@ -194,7 +199,7 @@ margin: auto
     flex-direction: column;
     margin: 10px;
     justify-content: space-around;
-        }
+}
 #TITRE{
     display: flex;
     justify-content: space-between;
@@ -211,15 +216,19 @@ margin: auto
     border-radius: 15px;
     margin: auto;
     box-shadow: 5px 5px 5px grey;
-     }
-
+}
+.populaire:hover{
+    transform: scale(1.1);
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
 .pop{
    width: 125px;
    height: 125px;
    padding: 5px;
    border-radius: 15px;
    object-fit: cover;
-     }
+}
 #Activités{
 display: flex;
 width: 100% ;
@@ -237,7 +246,12 @@ height: 440px;
 background-color: white;
 border-radius: 15px;
 box-shadow: 5px 5px 5px grey;
- }
+}
+.Activ1:hover{
+    transform: scale(1.1);
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
 .Activ2{
 display: flex;
 width: 22%;
@@ -253,7 +267,12 @@ justify-content: space-between;
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px grey;
-        }
+}
+#Activ3:hover{
+    transform: scale(1.1);
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
 #Activ4{
     width: 100%;
     height: 140px;
@@ -261,12 +280,22 @@ justify-content: space-between;
     border-radius: 15px;
     box-shadow: 5px 5px 5px grey;
 }
+#Activ4:hover{
+    transform: scale(1.1);
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
 .Activ5{
     width: 100%;
     height: 190px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px grey;
+}
+.Activ5:hover{
+    transform: scale(1.1);
+    background-color: #F2F2F2;
+    cursor: pointer;
 }
 .ACT1{
     width: 100%;
@@ -302,14 +331,14 @@ justify-content: space-between;
     height: 180px;
     background-color: #F2F2F2;
     justify-content: space-evenly;
-        }
+}
 .item{
     display: flex;
     flex-direction: column;
     width: 30%;
     height: 150px;
     padding-top: 30px;
-    }
+}
 .nuit{
     padding-left: 10px;
 }
@@ -320,15 +349,15 @@ justify-content: space-between;
 span{
     padding-left: 15px;
     padding-top: 0px;
-            }
+}
 h1{
     width: 100%;
     font-size: 1.1rem;
     margin-bottom: 5Px;
-                }
+}
 .gros{
     padding-left: 30px;
-    }
+}
 h2{
     font-size: 0.9rem;
     padding-left: 5px;
@@ -338,7 +367,7 @@ p{
     padding-left: 5px;
     font-size: 14px;
     margin: 0px;
-        }
+}
 #afficher{
     width: 100%;
     font-size: 17px;
@@ -354,7 +383,7 @@ p{
     color: black;
     text-decoration: none;
     padding-top: 5px;
-    }
+}
 @media (max-width: 1000px){
     #header{
         flex-direction: column;
