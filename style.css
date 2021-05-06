@@ -386,6 +386,12 @@ p{
 }
 /* Version mobile */
 @media (max-width: 1000px){
+    body{
+        width: 100%;
+    }
+    #header{
+        flex-direction: column;
+    }
     #trouvez{
         order: 2;
         width: 100%;
@@ -439,7 +445,6 @@ p{
         height: 1400px;
         order: 2;
         background-color: white;
-        align-items: center;
         margin: 0px;
     }
     .container1{
