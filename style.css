@@ -385,9 +385,6 @@ p{
     padding-top: 5px;
 }
 @media (max-width: 1000px){
-    #header{
-        flex-direction: column;
-    }
     #trouvez{
         order: 2;
         width: 100%;
@@ -433,6 +430,7 @@ p{
         align-items: center;
     }
     #container{
+        align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 100%;
