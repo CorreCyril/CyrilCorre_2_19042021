@@ -51,18 +51,19 @@ body{
     text-align: center;
 }
 #mars{
-    display: none;
     width: 200px;
-    height: 40px;
+    height: 38px;
     font-weight: bold;
     line-height: 20px;
     font-size: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
+
 #bouton{
-    display: block;
     width: 120px;
     height: 40px;
     background-color: #0065FC;
@@ -72,6 +73,17 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+#loupe{
+    width: 40px;
+    height: 40px;
+    background-color: #0065FC;
+    border-radius: 10px;    
+    text-align: center;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -10px;
 }
 button{
     color: white;
@@ -100,7 +112,7 @@ button{
     height: 30px;
     text-align: center;
     border-radius: 17px;
-    border: 2px solid #DEEBFF;
+    border: 2px solid #F2F2F2;
     margin-right: 30px;
 }
 .selec:hover{
@@ -139,7 +151,7 @@ button{
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 2px solid #F2F2F2;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -174,21 +186,20 @@ button{
     height: 180px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px #eaeaea;
     display: flex;
     flex-direction: column;
     margin: auto
 }
 .hebergement:hover{
     transform: scale(1.1);
-    background-color: #F2F2F2;
     cursor: pointer;
 }
 .image{
     width: 200px;
     height: 100px;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
     margin-bottom: 0px;
 }
@@ -217,18 +228,17 @@ button{
     background-color: white;
     border-radius: 15px;
     margin: auto;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px #eaeaea;
 }
 .populaire:hover{
     transform: scale(1.1);
-    background-color: #F2F2F2;
     cursor: pointer;
 }
 .pop{
    width: 125px;
    height: 125px;
    padding: 5px;
-   border-radius: 15px;
+   border-radius: 15px 0 0 15px;
    object-fit: cover;
 }
 #Activités{
@@ -247,7 +257,7 @@ width: 22%;
 height: 440px;
 background-color: white;
 border-radius: 15px;
-box-shadow: 5px 5px 5px grey;
+box-shadow: 5px 5px 5px #eaeaea;
 }
 .Activ1:hover{
     transform: scale(1.1);
@@ -268,7 +278,7 @@ justify-content: space-between;
     height: 240px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px #eaeaea;
 }
 #Activ3:hover{
     transform: scale(1.1);
@@ -280,7 +290,7 @@ justify-content: space-between;
     height: 140px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px #eaeaea;
 }
 #Activ4:hover{
     transform: scale(1.1);
@@ -292,7 +302,7 @@ justify-content: space-between;
     height: 190px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px #eaeaea;
 }
 .Activ5:hover{
     transform: scale(1.1);
@@ -385,6 +395,7 @@ p{
     color: black;
     text-decoration: none;
     padding-top: 5px;
+    font-weight: 400;
 }
 /* Version mobile */
 @media (max-width: 1000px){
@@ -403,6 +414,12 @@ p{
         padding-top: 30px;
         width: 100%;
     }
+    #bouton{
+        display: none;
+    }
+    #loupe{
+        display: flex;
+    }
     .heb{
         border-top: none;
         border-bottom: 2px solid #0065FC;
@@ -410,6 +427,7 @@ p{
     }
     .act{
         text-align: center;
+        border-bottom: 2px solid #F2F2F2;
         width: 50%;
     }
     .insc{
@@ -425,14 +443,15 @@ p{
         left: 20px
     }
     #barre{
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: auto;
+    }
+    #filtres{
+        width: 100%;
     }
     .selec{
-        width: 200px;
         margin-top: 10px;
-    }
-    #info{
-        margin-top: 200px;
     }
     #mars{
         display: block;
@@ -453,14 +472,20 @@ p{
         background-color: white;
         margin: 0px;
     }
+    #container h1{
+        padding-left: 10%;
+    }
     .container1{
-        width: 300px;
+        width: 100%;
     }
     .hebergement{
-        width: 300px;
+        width: 90%;
     }
     .image{
-        width: 290px;
+        width: auto;
+    }
+    #afficher{
+        padding-left: 10%;
     }
     #droite{
         width: 100%;
@@ -471,6 +496,10 @@ p{
     }
     #TITRE{
         padding-top: 20px;
+        width: 97%;
+    }
+    .populaire{
+        width: 90%;
     }
     #Activités{
         flex-direction: column;
@@ -481,15 +510,18 @@ p{
         flex-wrap: nowrap;
         padding-bottom: 10px;
     }
+    #Activités h1{
+        padding-left: 10%;
+    }
     .Activ1{
-        width: 300px;
+        width: 90%;
         height: 140px;
     }
     .ACT1{
         height: 100px;
     }
     .Activ2{
-        width: 300px;
+        width: 90%;
         height: 300px;
     }
     #Activ3{
