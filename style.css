@@ -182,8 +182,9 @@ button{
     margin: auto;
 }
 .hebergement{
-    width: 210px;
-    height: 180px;
+    width: 200px;
+    height: 170px;
+    padding: 5px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #eaeaea;
@@ -198,7 +199,6 @@ button{
 .image{
     width: 200px;
     height: 100px;
-    padding: 5px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     margin-bottom: 0px;
@@ -482,7 +482,7 @@ p{
         width: 90%;
     }
     .image{
-        width: auto;
+        width: 100%;
     }
     #afficher{
         padding-left: 10%;
